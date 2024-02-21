@@ -61,7 +61,7 @@ function addItem(itemName, itemEmoji) {
 }
 
 function removeItem(itemName) {
-    if (itemName && !itemName == "Water" && !itemName == "Fire" && !itemName == "Wind" && !itemName == "Earth") {
+    if (itemName) {
         if (!localStorage.getItem('infinite-craft-data')) {
             alert('You need to have mixed at least one item to use this script');
             return;
