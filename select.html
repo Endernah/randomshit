@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Selection</title>
+    <link rel="icon" href="{{ logo }}" type="image/x-icon"/>
+    <link rel="stylesheet" href="../static/select.css">
+</head>
+<body>
+    <div class="container main">
+        <h1>Select Your Delivery Option</h1>
+        <div class="delivery-options">
+            <div class="delivery-option">
+                <h2>Outside Delivery.</h2>
+                <p>Delivery outside of rady entrance.</p>
+                <button>Unavailable</button>
+            </div>
+            <div class="delivery-option">
+                <h2>School Enterence Delivery</h2>
+                <p>Delivery at the school entrance.</p>
+                <button onclick="window.location.href='/checkout?product={{ product }}_1'">1.99 C$</button>
+            </div>
+            <div class="delivery-option">
+                <h2>Custom Delivery</h2>
+                <p>Delivered anywhere on campus.</p>
+                <button onclick="window.location.href='/checkout?product={{ product }}_2'">2.99 C$</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
